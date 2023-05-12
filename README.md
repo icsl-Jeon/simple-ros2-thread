@@ -1,17 +1,17 @@
-# Simple ros2 package containing core and wrapper
+# Simple ros2 package to understand threads
 
-## Installation
-
-```
-cd ~/ros2_ws/src
-git clone https://github.com/icsl-Jeon/simple-ros2-package.git
-cd ~/ros2_ws
-colcon build 
-```
+Visit [here](https://motion-boseong.vercel.app/post8) for explanations.
 
 ## Running node
 
+In terminal A
+
 ```
-source ~/ros2_ws/install/local_setup.bash
-ros2 run my_package_ros2 server_node
+ros2 run simple_thread_tester publisher_node
+```
+
+In terminal B
+
+```
+ros2 run simple_thread_tester single_thread_subscriber_node
 ```
