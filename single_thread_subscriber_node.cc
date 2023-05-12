@@ -34,8 +34,7 @@ private:
 
 std::string
 SingleThreadSubscriber::ProcessString(const std::string &raw_string) {
-  std::this_thread::sleep_for(
-      std::chrono::milliseconds(100 * raw_string.size()));
+  std::this_thread::sleep_for(std::chrono::seconds(2));
   return "** " + raw_string + " **";
 };
 
