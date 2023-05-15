@@ -17,4 +17,11 @@ ament_target_dependencies(single_thread_subscriber_node rclcpp std_msgs)
 install(TARGETS single_thread_subscriber_node
         DESTINATION lib/simple_thread_tester)
 
+add_executable(multi_thread_reentrant_subscriber_node
+               multi_thread_reentrant_subscriber_node.cc)
+ament_target_dependencies(multi_thread_reentrant_subscriber_node rclcpp
+                          std_msgs)
+install(TARGETS multi_thread_reentrant_subscriber_node
+        DESTINATION lib/simple_thread_tester)
+
 ament_package()
