@@ -24,4 +24,11 @@ ament_target_dependencies(multi_thread_reentrant_subscriber_node rclcpp
 install(TARGETS multi_thread_reentrant_subscriber_node
         DESTINATION lib/simple_thread_tester)
 
+add_executable(multi_thread_mutually_exclusive_subscriber_node
+               multi_thread_mutually_exclusive_subscriber_node.cc)
+ament_target_dependencies(multi_thread_mutually_exclusive_subscriber_node
+                          rclcpp std_msgs)
+install(TARGETS multi_thread_mutually_exclusive_subscriber_node
+        DESTINATION lib/simple_thread_tester)
+
 ament_package()

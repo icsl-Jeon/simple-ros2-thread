@@ -41,10 +41,9 @@ SingleThreadSubscriber::ProcessString(const std::string &raw_string) {
 void SingleThreadSubscriber::ShortTopicCallback(
     const std_msgs::msg::String::SharedPtr msg) {
   auto processed_string = ProcessString(msg->data);
-  processed_short_string_ = processed_string;
 
   RCLCPP_INFO(get_logger(), "Setting processed:  %s", processed_string.c_str());
-  processed_long_string_ = processed_string;
+  processed_short_string_ = processed_string;
 }
 
 void SingleThreadSubscriber::LongTopicCallback(
@@ -52,7 +51,7 @@ void SingleThreadSubscriber::LongTopicCallback(
   auto processed_string = ProcessString(msg->data);
 
   RCLCPP_INFO(get_logger(), "Setting processed:  %s", processed_string.c_str());
-  processed_short_string_ = processed_string;
+  processed_long_string_ = processed_string;
 }
 
 int main(int argc, char **argv) {

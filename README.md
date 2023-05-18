@@ -15,3 +15,12 @@ In terminal B
 ```
 ros2 run simple_thread_tester single_thread_subscriber_node
 ```
+or 
+```
+ros2 run simple_thread_tester multi_thread_reentrant_subscriber_node
+```
+
+or 
+```
+ros2 run simple_thread_tester multi_thread_reentrant_subscriber_node
+```
