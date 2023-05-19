@@ -1,6 +1,6 @@
 # Simple ros2 package to understand threads
 
-Visit [here](https://motion-boseong.vercel.app/post8) for explanations.
+Visit [here](https://motion-boseong.vercel.app/threading-ros2/post8) for explanations.
 
 ## Running node
 
