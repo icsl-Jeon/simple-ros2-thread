@@ -23,3 +23,11 @@ jobs:
         with:
           package-name: simple_thread_tester
           target-ros2-distro: foxy
+      - name: Run clang-format style check for C/C++/Protobuf programs.
+        uses: DoozyX/clang-format-lint-action@v0.16.1
+        with:
+          source: '.'
+          extensions: 'cc'
+          style: '.clang-format'
+          clangFormatVersion: '10'
+          check-path: '.'
