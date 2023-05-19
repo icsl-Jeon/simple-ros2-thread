@@ -28,6 +28,6 @@ jobs:
         with:
           source: '.'
           extensions: 'cc'
-          style: '.clang-format'
+          style: file
           clangFormatVersion: '10'
           check-path: '.'
