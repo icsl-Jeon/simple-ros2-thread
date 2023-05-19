@@ -57,7 +57,7 @@ public:
   }
 
 private:
-  bool use_mutex{true};
+  bool use_mutex{false};
   struct {
     std::mutex short_topic_mutex;
     std::mutex long_topic_mutex;
